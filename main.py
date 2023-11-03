@@ -47,7 +47,7 @@ def driver(): # the brains of our program
     password = [] # our initial password generator
     print("Hello user, would you like a generated password? choose (y/n) ")
     choice = (input())
-    while choice.lower() == 'y': # handles our upper case in one step
+    if choice.lower() == 'y': # handles our upper case in one step
        preDefined(password)
        unindexedPassword = "".join(password) # joins our comma seperated list into one string
        print('\n' + "Password: " + unindexedPassword)
